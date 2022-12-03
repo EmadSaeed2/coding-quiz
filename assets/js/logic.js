@@ -1,3 +1,9 @@
+//assign elements selectors to variables
+var startScreenDiv = document.querySelector('#start-screen');
+var questionsDiv = document.querySelector('#questions');
+var questionTitle = document.querySelector('#question-title');
+var choicesDiv = document.querySelector('#choices');
+
 
 var currentQuestion = 0;
 
@@ -5,11 +11,8 @@ var currentQuestion = 0;
 function startQuiz() {
 
     // alert('hello');
-    document.querySelector('#start-screen').classList.add('hide');
-    document.querySelector('#questions').classList.remove('hide');
-
-    var questionTitle = document.querySelector('#question-title');
-    var choicesDiv = document.querySelector('#choices');
+    startScreenDiv.classList.add('hide');
+    questionsDiv.classList.remove('hide');
 
 }
 
