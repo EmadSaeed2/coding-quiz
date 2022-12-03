@@ -1,26 +1,5 @@
 var data = [
     {
-        question: 'Inside which HTML element do we put the JavaScript?',
-        choices: [
-            {
-                answer: '<javascript>',
-                correct: false,
-            },
-            {
-                answer: ' <js>',
-                correct: false,
-            },
-            {
-                answer: '<scripting>',
-                correct: false,
-            },
-            {
-                answer: '<script>',
-                correct: true,
-            },
-        ]
-    },
-    {
         question: 'How do you write "Hello World" in an alert box?',
         choices: [
             {
