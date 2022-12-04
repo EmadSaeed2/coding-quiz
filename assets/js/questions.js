@@ -83,4 +83,46 @@ var data = [
             },
         ]
     },
+    {
+        question: 'How do you write "Hello World" in an alert box?',
+        choices: [
+            {
+                answer: 'msgBox("Hello World");',
+                correct: false,
+            },
+            {
+                answer: 'alert("Hello World");',
+                correct: true,
+            },
+            {
+                answer: 'alertBox("Hello World");',
+                correct: false,
+            },
+            {
+                answer: 'msg("Hello World");',
+                correct: false,
+            },
+        ]
+    },
+    {
+        question: 'How to write an IF statement in JavaScript?',
+        choices: [
+            {
+                answer: 'if (i == 5)',
+                correct: true,
+            },
+            {
+                answer: 'if i = 5 then',
+                correct: false,
+            },
+            {
+                answer: 'if i == 5 then',
+                correct: false,
+            },
+            {
+                answer: 'if i = 5',
+                correct: false,
+            },
+        ]
+    },
 ]
