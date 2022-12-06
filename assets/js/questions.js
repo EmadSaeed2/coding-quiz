@@ -42,7 +42,7 @@ var data = [
         ]
     },
     {
-        question: 'What is the isCorrect way to write a JavaScript array?',
+        question: 'What is the correct way to write a JavaScript array?',
         choices: [
             {
                 answer: 'var colors = ["red", "green", "blue"]',
