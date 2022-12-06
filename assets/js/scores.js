@@ -1,3 +1,4 @@
+//assign elements selectors to variables
 var highscoresOL = document.querySelector('#highscores');
 var clearButton = document.querySelector('#clear');
 
