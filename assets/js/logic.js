@@ -1,3 +1,4 @@
+//assign sound effect files to variables
 var correctSound = new Audio('assets/sfx/correct.wav');
 var incorrectSound = new Audio('assets/sfx/incorrect.wav');
 
@@ -14,6 +15,7 @@ var finalScoreDiv = document.querySelector('#final-score')
 var submitButton = document.querySelector('#submit')
 var initialsInput = document.querySelector('#initials')
 
+// initialize the starting values
 var currentQuestion = 0;
 var score = 0;
 var time = 75;
@@ -40,7 +42,7 @@ function nextQuistion() {
     choicesData = data[currentQuestion].choices;
     var answers = '';
     for (choice of choicesData) {
-        answers += `<button><li data-correct=${choice.correct}>${choice.answer}</li></button>`;
+        answers += `<button><li data-iscorrect=${choice.isCorrect}>${choice.answer}</li></button>`;
     }
 
     choicesOL.innerHTML = answers;
@@ -60,7 +62,7 @@ choicesOL.addEventListener('click', function (event) {
     if (event.target.tagName === 'LI') {
         if (currentQuestion < data.length - 1) {
             feedbackDiv.classList.remove('hide');
-            if (event.target.dataset.correct === 'true') {
+            if (event.target.dataset.iscorrect === 'true') {
                 feedbackDiv.textContent = 'Correct!';
                 correctSound.play();
             } else {
@@ -68,7 +70,7 @@ choicesOL.addEventListener('click', function (event) {
                 incorrectSound.play();
                 time -= 15; // reduce time if answer is wrong
             }
-
+            // display next quistion
             currentQuestion++;
             nextQuistion();
 
@@ -94,7 +96,6 @@ function endGame() {
 }
 
 // function to save the score to lical storge
-
 var highscoresArr = [];
 
 submitButton.addEventListener('click', function (event) {

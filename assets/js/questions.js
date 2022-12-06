@@ -4,19 +4,19 @@ var data = [
         choices: [
             {
                 answer: 'msgBox("Hello World");',
-                correct: false,
+                isCorrect: false,
             },
             {
                 answer: 'alert("Hello World");',
-                correct: true,
+                isCorrect: true,
             },
             {
                 answer: 'alertBox("Hello World");',
-                correct: false,
+                isCorrect: false,
             },
             {
                 answer: 'msg("Hello World");',
-                correct: false,
+                isCorrect: false,
             },
         ]
     },
@@ -25,40 +25,40 @@ var data = [
         choices: [
             {
                 answer: 'if (i == 5)',
-                correct: true,
+                isCorrect: true,
             },
             {
                 answer: 'if i = 5 then',
-                correct: false,
+                isCorrect: false,
             },
             {
                 answer: 'if i == 5 then',
-                correct: false,
+                isCorrect: false,
             },
             {
                 answer: 'if i = 5',
-                correct: false,
+                isCorrect: false,
             },
         ]
     },
     {
-        question: 'What is the correct way to write a JavaScript array?',
+        question: 'What is the isCorrect way to write a JavaScript array?',
         choices: [
             {
                 answer: 'var colors = ["red", "green", "blue"]',
-                correct: true,
+                isCorrect: true,
             },
             {
                 answer: 'var colors = "red", "green", "blue"',
-                correct: false,
+                isCorrect: false,
             },
             {
                 answer: 'var colors = 1 = ("red"), 2 = ("green"), 3 = ("blue")',
-                correct: false,
+                isCorrect: false,
             },
             {
                 answer: 'var colors = (1:"red", 2:"green", 3:"blue")',
-                correct: false,
+                isCorrect: false,
             },
         ]
     },
@@ -67,61 +67,61 @@ var data = [
         choices: [
             {
                 answer: 'rnd(7.25)',
-                correct: false,
+                isCorrect: false,
             },
             {
                 answer: 'round(7.25)',
-                correct: false,
+                isCorrect: false,
             },
             {
                 answer: 'Math.round(7.25)',
-                correct: true,
+                isCorrect: true,
             },
             {
                 answer: 'Math.rnd(7.25)',
-                correct: false,
+                isCorrect: false,
             },
         ]
     },
     {
-        question: 'How do you write "Hello World" in an alert box?',
+        question: 'How to write an IF statement for executing some code if "i" is NOT equal to 5?',
         choices: [
             {
-                answer: 'msgBox("Hello World");',
-                correct: false,
+                answer: 'if i =! 5 then',
+                isCorrect: false,
             },
             {
-                answer: 'alert("Hello World");',
-                correct: true,
+                answer: 'if (i <> 5)',
+                isCorrect: false,
             },
             {
-                answer: 'alertBox("Hello World");',
-                correct: false,
+                answer: 'if i <> 5',
+                isCorrect: false,
             },
             {
-                answer: 'msg("Hello World");',
-                correct: false,
+                answer: 'if (i != 5)',
+                isCorrect: true,
             },
         ]
     },
     {
-        question: 'How to write an IF statement in JavaScript?',
+        question: 'How do you find the number with the highest value of x and y?',
         choices: [
             {
-                answer: 'if (i == 5)',
-                correct: true,
+                answer: 'ceil(x,y)',
+                isCorrect: false,
             },
             {
-                answer: 'if i = 5 then',
-                correct: false,
+                answer: 'top(x,y)',
+                isCorrect: false,
             },
             {
-                answer: 'if i == 5 then',
-                correct: false,
+                answer: 'Math.ceil(x,y)',
+                isCorrect: false,
             },
             {
-                answer: 'if i = 5',
-                correct: false,
+                answer: 'Math.max(x,y)',
+                isCorrect: true,
             },
         ]
     },
