@@ -3,7 +3,6 @@
 ## Overview
 
 A timed coding quiz with multiple-choice questions. This app will run in the browser, and will feature dynamically updated HTML and CSS powered by JavaScript with a clean, polished, and responsive user interface. 
-Presses the button to start the quiz. Clicking the button for the answer to each question, displays if the answer was correct or incorrect. Quiz finishes and displays high scores. The user adds their initials, then clears their initials and starts over.
 
 ## Instructions
 
