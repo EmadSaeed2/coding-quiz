@@ -106,7 +106,7 @@ submitButton.addEventListener('click', function (event) {
 function setHighscores() {
     // check if localStorage has highscores item if not, create it.
     if (!localStorage.getItem("highscores")) {
-        localStorage.setItem("highscores", JSON.stringify(highscores));
+        localStorage.setItem("highscores", JSON.stringify(highscoresArr));
     } else {
         // validate user input
         var userInput = initialsInput.value;
