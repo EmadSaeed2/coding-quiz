@@ -126,7 +126,7 @@ function setHighscores() {
             // overwrite highscores into localStorage
             localStorage.setItem("highscores", JSON.stringify(highscoresArr));
 
-            location.replace("/highscores.html")
+            location.replace("highscores.html")
 
             console.log(localStorage.getItem("highscores"))
         }
